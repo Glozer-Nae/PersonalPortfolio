@@ -1,0 +1,156 @@
+
+
+/* Bootstrap navbar link styles */
+.navbar-nav .nav-link {
+    color: white !important;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c10606 !important;
+    border-bottom-color: #c10606;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#aboutme, #skills, #projects {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: auto;
+    border-top: 2px solid #c10606;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Profile Image Styling - Only for hero section */
+#image {
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(193, 6, 6, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(193, 6, 6, 0.7);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #c10606;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.cards:hover, .skills-cards:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(193, 6, 6, 0.6);
+  
+}
+
+.cards h3,
+.cards ul {
+  color: white;
+  margin: 0;
+}
+
+.cards ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.cards li {
+  color: white;
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.cards li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #fff;
+}
+
+.skills-cards i {
+  font-size: 64px;
+  color: white;
+  margin: 15px 0;
+}
+
+.skills-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #c10606;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-content p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.contact-content a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contact-content a:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px #c10606);
+}
+
+.contact-content a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
